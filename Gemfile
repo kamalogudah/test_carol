@@ -1,2 +1,5 @@
 source :rubygems
-gem 'carol'
+gem 'carol', :path => "../carol"
+group :development do
+  gem "rerun"
+end
