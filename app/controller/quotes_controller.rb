@@ -8,4 +8,8 @@ class QuotesController < Carol::Controller
   def exception
     raise "It's a bad one!"
   end
+
+  def summation
+    "Sum is: #{5 + 4}" 
+  end
 end
