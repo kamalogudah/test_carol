@@ -1,2 +1,2 @@
 source :rubygems
-gem 'carol'
+gem 'carol', :path => "../carol"

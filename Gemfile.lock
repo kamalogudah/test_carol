@@ -1,15 +1,22 @@
+PATH
+  remote: ../carol
+  specs:
+    carol (0.2.0)
+      rack (~> 2.0, >= 2.0.5)
+      rack-test (~> 0.6.3)
+
 GEM
   remote: http://rubygems.org/
   specs:
-    carol (0.1.0)
-      rack (~> 1.6)
-    rack (1.6.10)
+    rack (2.0.5)
+    rack-test (0.6.3)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  carol
+  carol!
 
 BUNDLED WITH
    1.16.1
