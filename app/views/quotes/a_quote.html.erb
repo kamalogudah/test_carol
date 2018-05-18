@@ -3,5 +3,10 @@
 <%= noun %> makes it so.
 </p>
 <p>
- Ruby version <%= RUBY_VERSION %>
+ Ruby version <%= RUBY_VERSION %> and we are in this path:
+  <%= env["PATH_INFO"] %>
  </p>
+ <div>
+ <h1> And now the Environment variables</h1>
+ <%= env %>
+ </div>
