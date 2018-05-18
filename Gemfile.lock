@@ -2,12 +2,14 @@ PATH
   remote: ../carol
   specs:
     carol (0.2.0)
+      erubis (~> 2.7)
       rack (~> 2.0, >= 2.0.5)
       rack-test (~> 0.6.3)
 
 GEM
   remote: http://rubygems.org/
   specs:
+    erubis (2.7.0)
     ffi (1.9.23)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
