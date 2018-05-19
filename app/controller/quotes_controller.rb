@@ -8,6 +8,11 @@ class QuotesController < Carol::Controller
   end
 
   def summation
-    "Sum is: #{5 + 4}" 
+    "Sum is: #{5 + 4}"
+  end
+
+  def quote_1
+    quote_1 = Carol::Model::FileModel.find(1)
+    render :quote, :obj => quote_1
   end
 end
