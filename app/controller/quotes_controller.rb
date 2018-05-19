@@ -21,4 +21,15 @@ class QuotesController < Carol::Controller
     quote_1 = FileModel.find(1)
     render :quote, :obj => quote_1
   end
+
+  def new_quote
+    attrs = {
+      "submitter" => "Real user",
+      "quote" => "A is worth a thousand pixels",
+      "attribution" => "Me"
+      }
+  
+      m = FileModel.create(attrs)
+      render :quote, :obj => m
+  end
 end
