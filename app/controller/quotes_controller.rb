@@ -22,6 +22,12 @@ class QuotesController < Carol::Controller
     render :quote, :obj => quote_1
   end
 
+  def show
+    quote = FileModel.find(params["id"])
+    ua = request.user_agent
+    render :quote, :obj => quote, :ua => ua
+  end
+
   def new_quote
     attrs = {
       "submitter" => "Real user",
